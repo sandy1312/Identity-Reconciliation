@@ -17,12 +17,22 @@ This service solves the problem of identity reconciliation for Bitespeed’s cus
 
 ### `POST /identify`
 
-This endpoint identifies and consolidates customer contact details.
+##  🚀 Live Endpoint
+
+> Base URL:  
+`https://identity-reconciliation-rvft.onrender.com`
 
 ### ✅ Request Body
 
-```json
+json
 {
   "email": "example@fluxkart.com",
   "phoneNumber": "1234567890"
 }
+
+### CURL Request to Check on Postman
+curl -X POST https://identity-reconciliation-rvft.onrender.com/identify \ 
+-H "Content-Type: application/json" \
+-d '{"email":"marty@flux.com","phoneNumber":"123456"}'
+
+
